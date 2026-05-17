@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\css\bootstrap\bootstrap.min.css" />
+      <None Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+      <None Include="wwwroot\css\font\quicksand-v8-latin-300.woff" />
+      <None Include="wwwroot\css\font\quicksand-v8-latin-300.woff2" />
+      <None Include="wwwroot\css\font\quicksand-v8-latin-500.woff" />
+      <None Include="wwwroot\css\font\quicksand-v8-latin-500.woff2" />
+      <None Include="wwwroot\css\font\quicksand-v8-latin-700.woff" />
+      <None Include="wwwroot\css\font\quicksand-v8-latin-700.woff2" />
+      <None Include="wwwroot\css\font\quicksand-v8-latin-regular.woff" />
+      <None Include="wwwroot\css\font\quicksand-v8-latin-regular.woff2" />
+      <None Include="wwwroot\css\font\quicksand.css" />
+      <None Include="wwwroot\css\site.css" />
+      <None Include="wwwroot\img\bike.svg" />
+      <None Include="wwwroot\img\icon-512.png" />
+      <None Include="wwwroot\img\logo.svg" />
+      <None Include="wwwroot\img\pizza-slice.svg" />
+      <None Include="wwwroot\img\pizzas\bacon.jpg" />
+      <None Include="wwwroot\img\pizzas\brit.jpg" />
+      <None Include="wwwroot\img\pizzas\cheese.jpg" />
+      <None Include="wwwroot\img\pizzas\margherita.jpg" />
+      <None Include="wwwroot\img\pizzas\meaty.jpg" />
+      <None Include="wwwroot\img\pizzas\mushroom.jpg" />
+      <None Include="wwwroot\img\pizzas\pepperoni.jpg" />
+      <None Include="wwwroot\img\pizzas\salad.jpg" />
+      <None Include="wwwroot\img\user.svg" />
+    </ItemGroup>
+
+</Project>

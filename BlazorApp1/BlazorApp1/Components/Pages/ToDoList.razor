@@ -1,0 +1,32 @@
+@page "/todo"
+@using BlazorApp1.Models
+@rendermode InteractiveServer
+
+<h3>Left tasks: (@items.Count(x => !x.IsDone))</h3>
+
+<ul>
+    @foreach (var item in items)
+    {
+        <li>
+            <input type="checkbox" @bind="@item.IsDone"/>
+            <strong> @item.Title </strong>
+        </li>
+    }
+</ul>
+
+<input @bind="newTask"/>
+<button @onclick="AddTodo">Add new task</button>
+
+@code {
+    private List<ToDoItem> items = new();
+    private string newTask = "";
+
+    private void AddTodo()
+    {
+        if (!string.IsNullOrWhiteSpace(newTask))
+        {
+            items.Add(new () {Title = newTask});
+            newTask = string.Empty;
+        }
+    }
+}
